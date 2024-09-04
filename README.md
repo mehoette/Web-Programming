@@ -10,6 +10,6 @@ Directory:
 - P1 - basic understanding of HTML and CSS, cow information page
 - P2 - using JavaScript to add functionality to web pages, Saying Hello, Calculator and mouse chase game
 - P3 - using PHP to create dynamic websites that has a login and log out, see the date, rock paper scissors and repeated sentences
-        note: username and password are hardcoded and "David" and "123456" respectively. On a real website, you would use a database to store usernames/passwords
+        note: username and password are hardcoded as "David" and "123456" respectively. On a real website, you would use a database to store usernames/passwords
 - P4 - Bring it all together using AJAX, JSON and SQL, to do list
   

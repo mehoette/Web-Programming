@@ -1,0 +1,54 @@
+<!--
+Mary Hoette
+CSC 390 Web Programming
+10/18/2023
+
+This is the Calculator HTML page for project 2.
+It functions as a regular calculator.
+It has addition, subtraction, multiplication,
+division, exponents and square roots.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--the title of the page is Home and it uses the style.css file. It also uses the calculator.js Javascript file-->
+    <title>Calculator</title>
+    <script src="Calculator.js"></script>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <!--there's a flex box with a collumn for the 1st number, a collumn for the 2nd number and a collumn for the answer-->
+    <div class = "flexbox">
+
+        <div class = "collumn">
+            <h3>First Number:</h3>
+            <input type="text" name="" id="N1">
+        </div><!-- end collumn 1 -->
+
+        <div class = "collumn">
+            <h3>Second Number</h3>
+            <input type="text" name="" id="N2">
+        </div><!-- end collumn 2 -->
+
+        <div class = "collumn">
+            <h3>ANSWER</h3>
+            <h1 id = "answer"> </h1>
+        </div><!-- end collumn 3 -->
+
+    </div> <!-- end flexbox -->
+
+    <!--then we have a row of buttons for each of the operations-->
+    <div id = "operations">
+        <button id="add">+</button>
+        <button id="subtract">-</button>
+        <button id="multiply">*</button>
+        <button id="divide">/</button>
+        <button id="exponent">^</button>
+        <button id="sqrt">√</button>
+    </div>
+</body>
+</html>

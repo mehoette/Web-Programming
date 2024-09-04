@@ -1,0 +1,48 @@
+/*
+Mary Hoette
+CSC 390 Web Programming
+11/8/2023
+
+This is the CSS for project 2.
+
+*/
+
+body{ /*all text on this site is aligned to the center by default. The page is also yellow with purple text*/
+    text-align: center;
+    background-color: rgb(255, 222, 101);
+    color: rgb(138, 61, 190);
+    margin:0px;
+}
+#header a{
+    color: rgb(255, 222, 101); 
+}
+
+
+.flexbox{
+    /*flexboxes all start 100px away from the top and are spaced evenly*/
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.options{ 
+    /*make all the radio buttons twice as big*/
+    transform: scale(2); 
+    padding:50px;
+}
+
+#submit{
+    transform: scale(1.5);
+}
+
+#header{
+    color: rgb(255, 222, 101);
+    background-color: rgb(138, 61, 190);
+    padding: 50px;
+    margin: 0px;
+}
+
+#date{
+
+    padding: 50px;
+}

@@ -1,0 +1,56 @@
+<!--
+Mary Hoette
+CSC 390 Web Programming
+9/20/2023
+
+This is the HTML for the home page of project 1.
+It is a website about showing off cows on a farm.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--The tab's name in browser should be home and it should use the style from the css file style.css-->
+    <title>Home</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+
+
+<body>
+    <!--The top of the page has a title of the farm, and 2 subtitles (one has the id alert to make it look different)-->
+    <h1>Bovine Boulevard</h1>
+    <h2 id="alert">Come see the wonderful cows of Bovine Boulevard!!</h2>
+    <h2>We have a wonderful variety of stock for you</h2>
+    
+
+    <!--here we have the flex boxes set up. This has a class of flexboxes to group it with the ones on other pages
+    this div also has an id of stock to differentiate it from the flex boxes on other pages
+    inside the div we have a link that has a picture and name of one of the cows. The link goes to the repective cow's page -->
+    <div class="flexBoxes" id="stock">
+        <a href="Bertha.html">
+            <p>Bertha</p>
+            <img src="pictures/Bertha.jpg" alt="Picture of our beautiful cow Bertha">
+        </a>
+        <a href="Gregith.html">
+            <p>Gregith</p>
+            <img src="pictures/Gregith.jpg" alt="Picture of our beautiful cow Gregith">
+        </a>
+        <a href="Walbert.html">
+            <p>Walbert</p>
+            <img src="pictures/Walbert.jpg" alt="Picture of our beautiful cow Walbert">
+        </a>
+        <a href="Cornflower.html">
+            <p>Cornflower</p>
+            <img src="pictures/Cornflower.jpg" alt="Picture of our beautiful cow Cornflower">
+        </a>
+    </div>
+
+    <!--The last thing on the page is an embedded youtube video with a caption.-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FavUpD_IjVY?si=WQLqAxhp35amhjHM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p>Our cows have been trained since birth to be dancing phenomenon.</p>
+</body>
+</html>

@@ -1,0 +1,84 @@
+/*
+Mary Hoette
+CSC 390 Web Programming
+9/19/2023
+
+This is the CSS for project 1.
+
+*/
+
+body{ /*all text on this site is aligned to the center by default*/
+    text-align: center;
+}
+
+h1{/*The regular h1 was too small for what I wanted. I also got rid of its margins because they were very large*/
+    
+    font-size: 72pt;
+    margin: 0px;
+}
+
+/*This makes anything with class flexboxes actually a flex box. It also makes them centered and spaced out properly.*/
+.flexBoxes{
+    display: flex;
+    padding: 5px 0px;
+    justify-content: space-around;
+}
+
+/*things with the id stock now have a red background and the links inside are black */
+#stock a{
+    color:black;
+    background-color: red;
+}
+
+/*when you hover over the stock, turn the background of that cow's card blue*/
+#stock > a:hover{
+    background-color: rgb(62, 100, 171);
+}
+
+/*each image of the stock should be 200x200 pixels and should have 10px of padding on each side*/
+#stock img{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}
+
+/*The font(<p>) in stock should be 24px and have 10px margins*/
+#stock p{
+    font-size: 24px;
+    margin: 10px;
+}
+
+/*the subtitle tagged alert should have yellow text and a red background*/
+#alert{
+    background-color: red;
+    color: yellow;
+}
+
+/*iframes (embedded youtube videos) have 50px of padding on the top*/
+iframe{
+    padding-top: 50px;
+}
+
+/*the paragraphs and header 2 in the class stats both are inline elements and are vertically aligned on the center*/
+.stat p, .stat h2{
+    display: inline;
+    align-items: baseline;
+}
+
+/*the info class on the cow stats pages should be aligned to the left unlike the default font*/
+.info{
+    text-align: left;
+}
+
+/*the images in the picture class would be at least 347x383 pixels but not more than 550x500 pixels*/
+.picture img{
+    max-height: 550px;
+    max-width: 550px;
+    min-width: 347px;
+    min-height: 383px;
+}
+
+/*The button should have more margin (specifcallt 15 pixels)*/
+button{
+    margin-top: 15px;
+}

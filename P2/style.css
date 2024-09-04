@@ -1,0 +1,45 @@
+/*
+Mary Hoette
+CSC 390 Web Programming
+10/18/2023
+
+This is the CSS for project 2.
+
+*/
+
+body{ /*all text on this site is aligned to the center by default. The page is also blue with yellow text*/
+    text-align: center;
+    background-color: cadetblue;
+    color: yellow;
+}
+
+.flexbox{
+    /*flexboxes all start 100px away from the top and are spaced evenly*/
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#operations{
+    /*the operations had to be shifted left 80px by adding padding because for some reason they weren't centering with the flex boxes*/
+    padding-left: 80px;
+    /*There's also 15px of padding on the top to make it not look so cramped*/
+    padding-top: 15px;
+}
+
+.option{
+    /*The game options also get 15px of padding*/
+    padding:15px;
+}
+
+img{
+    /*the one image is scaled down to 25% of its normal size and also gets some padding*/
+    padding-top: 20px;
+    max-width: 25%;
+    max-height: 25%
+}
+
+#button{
+    /*the button potition is absolute so it can float around the page to get away from you*/
+    position: absolute;
+}

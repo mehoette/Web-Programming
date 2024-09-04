@@ -1,0 +1,68 @@
+<!--
+Mary Hoette
+CSC 390 Web Programming
+9/20/2023
+
+This is the HTML for the Cornflower stats page of Project 1.
+It has a picture of the cow on the left and his stats on the right.
+It also has a button to go back to the home page.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--This page also uses the style.css stylesheet and has a tab title of Cornflower Stats-->
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <title>Cornflower Stats</title>
+</head>
+<body>
+    <!--this div is also a flexbox with a picture on the left and a name and list of stats on the right-->
+    <div class="flexBoxes">
+        <!--this first div just has a picture of Bertha.-->
+        <div class= "picture">
+            <img src="pictures/Cornflower.jpg" alt="Picture of our beautiful cow Cornflower">
+        </div>
+        <!--the div on the right has a class called info and it holds the name of the cow as h1 and the divs of the stats inside-->
+        <div class="info">
+            <h1>Cornflower</h1>
+
+            <!--Each div gets the class stat and has a header and p for each stat-->
+            <div class="stat">
+                <h2>Weight: </h2>
+                <p>1400 lbs</p>
+            </div>
+
+            <div class="stat">
+                <h2>Height: </h2>
+                <p>4'8"</p>
+            </div>
+
+            <div class="stat">
+                <h2>Age: </h2>
+                <p>4 years</p>
+            </div>
+
+            <div class="stat">
+                <h2>Sex: </h2>
+                <p>Male</p>
+            </div>
+
+            <div class="stat">
+                <h2>Special notes: </h2>
+                <p>Three seperate farmhands have had accidents where Cornflower traped them against the wall of the barn!</p>
+            </div>
+
+            <!--After all the relevent information, there's a button to return to the home page.
+            Placing the button inside the link element let it be function while looking like a button.-->
+            <a href="P1Home.html">
+                <button>Back to home</button>
+              </a>
+              
+        </div>
+    </div>
+</body>
+</html>

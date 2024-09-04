@@ -1,0 +1,41 @@
+<!--
+Mary Hoette
+CSC 390 Web Programming
+10/18/2023
+
+This is the Saying Hello HTML page for project 2.
+It asks for your name and age. There's a submit
+button. There's also an empty paragraph to put
+and error message if you put the wrong age.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--the title of the page is Hello and it uses the style.css file. It also uses the SayingHello.js Javascript file-->
+    <title>Hello</title>
+    <script src="SayingHello.js"></script>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+    <!--This div has 2 collumns which prompt for a name and age and then have a text box for each-->
+    <div>
+        <div class = "collumn">
+            <h3>Name:</h3>
+            <input type="text" name="" id="name">
+        </div>
+        <div class = "collumn">
+            <h3>Age:</h3>
+            <input type="text" name="" id="age">
+            <p id = "errorMessage"></p>
+        </div>
+    </div>
+
+    <!--There's also a submit button at the bottom-->
+    <button id="submit">Submit</button>
+
+</body>
+</html>

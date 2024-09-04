@@ -1,0 +1,139 @@
+/*
+Mary Hoette
+CSC 390 Web Programming
+11/8/2023
+
+This is the CSS for project 4.
+
+*/
+
+body{ /*the text is centered and is black on a tan background by default.*/
+    text-align: center;
+    background-color: #d3b683;
+    color: black;
+    margin: 0px;
+}
+h1{/*h1 text is bigger and has no padding*/
+    font-size: 75px;
+    padding: 0px;
+}
+
+#signUp{/*there's alot of padding to push sign up away from the edge*/
+    padding-right: 100px;
+}
+
+.flexbox{ /*flexboxes should use the space around method and should be centered horizonally*/
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+#loginPage{ /*the login page should align left*/
+    text-align: left;
+    margin: 10px;
+}
+
+#login{ /*the login flexbox should work similar to the other flexboxes but use space between instead of space around*/
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#x{ /*all x buttons should be red*/
+    color: rgb(228, 6, 6); 
+}
+
+#check{ /*all check mark buttons should be green*/
+    color: rgb(8, 128, 8);
+}
+
+#header{ /*the header should be white with brown text and should have the padding and margins shifted a bit*/
+    color: white;
+    background-color: saddlebrown;
+    padding: 50px;
+    margin: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#header a{ /*buttons in the header should be white*/
+    color: white;
+    padding-left: 10px;
+}
+.title{ /*the title should be a flexbox that has brown text on a white background*/
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    align-items: baseline;
+    color: white;
+    background-color: saddlebrown;
+}
+.title a{ /*title buttons should be white*/
+    color:white;
+}
+.headings /* headings of the table should have 0 margin */
+{
+    margin: 0px;
+}
+.item{/* all items should have 30px of padding on the left and right and a max width of 200px*/
+    padding-left: 30px;
+    padding-right:30px;
+    max-width: 200px;
+}
+.titleItem{/* all title items should have no margin on the top and bottom*/
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+.add{/*the add page should be aligned left and have less padding*/
+    text-align: left;
+    padding: 10px;
+}
+
+
+
+
+@media(max-width: 750px) { /*if the page is less than 750 px wide...*/
+  
+    body{/* all font should be 10% smaller*/
+        font-size: 90%;
+    }
+    a{/* buttons should have more padding*/
+        padding: 5px;;
+    }
+    #header{/*the header needs to be adjusted*/
+        width: auto;
+        font-size: 90%;
+        margin: 0px;
+        padding: 15px;
+    }
+    #header.item{/*all items in the header should stay away from the left edge*/
+        margin-left: 50px;
+    }
+    #login{/*the log in informationn is justified to the center*/
+        display: flex;
+        justify-content: center;
+    }
+    .item{ /*each item in the list should have different padding and not be bigger than 135 px on a single line*/
+        padding-left: 10px;
+        padding-right:10px;
+        max-width: 135px;
+    }
+    .titleItem{ /*title items should have extra padding to the left and right*/
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .flexbox{ /*make the flexboxes align to the center instead of space around*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    h1{/*h1 should get significantly smaller*/
+        font-size: 35px;
+        padding: 0px;
+    }
+    
+
+}
